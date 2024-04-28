@@ -1,0 +1,220 @@
+@import url("/font-awesome-4.6.3/css/font-awesome.min.css");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.BackContainer {
+  height: 140vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.Background {
+  height: 140vh;
+  width: 100vw;
+  background-color: hsl(257, 40%, 49%);
+  z-index: -1;
+}
+.Desktop {
+  display: none;
+}
+.Mobile {
+  z-index: -1;
+}
+.Container {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  justify-content: center;
+  z-index: 1;
+}
+.Card {
+  height: 750px;
+  width: 320px;
+  padding: 20px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+.Icon {
+  margin-bottom: 30px;
+}
+.Top {
+  display: flex;
+  flex-direction: column;
+}
+.Pages {
+  height: auto;
+  margin-bottom: 30px;
+}
+.Mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Text {
+  height: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 80%;
+}
+button {
+  overflow-y: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+
+  border: none;
+  color: hsl(257, 40%, 49%);
+  box-shadow: rgba(0, 0, 0, 0.319) 0px 5px 10px 1px;
+  transition: all 0.2s;
+}
+.Bottom {
+  height: 115px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: white;
+}
+i {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+i:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+.fa-facebook-f {
+  padding: 0px;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .Container {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  .Mobile {
+    z-index: -1;
+    display: none;
+  }
+  .Card {
+    height: 750px;
+    width: 1200px;
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Desktop {
+    display: block;
+  }
+  .Top {
+    display: flex;
+    flex-direction: column;
+    width: 160%;
+  }
+  .Icon {
+    margin-bottom: 90px;
+  }
+  .Pages {
+    height: 475px;
+    margin-bottom: 120px;
+  }
+  .Mid {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    text-align: left;
+  }
+  p {
+    text-align: left;
+    font-size: 20px;
+  }
+  h5 {
+    text-align: left;
+    padding-right: 155px;
+    font-size: 30px;
+  }
+  button {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    width: 45%;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50px;
+
+    border: none;
+    color: hsl(257, 40%, 49%);
+    box-shadow: rgba(0, 0, 0, 0.319) 0px 5px 10px 1px;
+    transition: all 0.2s;
+  }
+  .Text {
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Bottom {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    height: 115px;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    color: white;
+  }
+  * {
+    overflow: hidden;
+  }
+}
